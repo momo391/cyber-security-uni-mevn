@@ -14,7 +14,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 mongoose
-  .connect(uri)
+  .connect(uri, {
+    dbName: "cyber security",
+  })
   .then(() => console.log("connected to database"))
   .catch((err) => console.log("err", err));
 
