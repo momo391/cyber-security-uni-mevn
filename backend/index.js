@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 mongoose
   .connect(uri, {
-    dbName: "cyber security",
+    dbName: "CyberSecurity",
   })
   .then(() => console.log("connected to database"))
   .catch((err) => console.log("err", err));
